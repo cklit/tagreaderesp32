@@ -18,7 +18,7 @@ esphome:
     - logger.log: API is connected!
 
 dashboard_import:
-  package_import_url: github://cklit/tagreaderesp32/blob/main/tagreader_esp32.yaml
+  package_import_url: github://cklit/tagreaderesp32/tagreader_esp32.yaml
 
 improv_serial:
 
