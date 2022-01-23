@@ -18,14 +18,11 @@ esphome:
     - logger.log: API is connected!
 
 dashboard_import:
-  package_import_url: github://cklit/tagreaderesp32/tagreader_esp32.yaml
+  package_import_url: github://cklit/tagreaderesp32/blob/main/tagreader_esp32.yaml
 
 improv_serial:
 
 wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
-
 
 # Enable the captive portal for inital WiFi setup
 captive_portal:
@@ -139,3 +136,4 @@ text_sensor:
       name: "${friendly_name} Connected SSID"
       icon: mdi:wifi-strength-2
       entity_category: diagnostic
+
