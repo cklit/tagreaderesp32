@@ -4,7 +4,7 @@ esphome:
   board: esp32dev
   # Automatically add the mac address to the name
   # so you can use a single firmware for all devices
-  name_add_mac_suffix: true
+  name_add_mac_suffix: false
   project:
     name: cklit.tag_reader_esp32
     version: "1.0"
@@ -18,18 +18,19 @@ esphome:
     - logger.log: API is connected!
 
 dashboard_import:
-  package_import_url: github://cklit/tagreaderesp32/blob/main/tagreader_esp32.yaml
+  package_import_url: github://cklit/tagreaderesp32/blob/master/tagreader_esp32.yaml
 
 improv_serial:
 
 wifi:
+
 
 # Enable the captive portal for inital WiFi setup
 captive_portal:
 
 
 substitutions:
-  name: tagreader
+  name: tagreader-cd3e4c
   friendly_name: TagReader
 
 
